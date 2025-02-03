@@ -27,7 +27,7 @@
             max-width: 100%; /* Ensure the image is responsive */
             height: auto; /* Keep the aspect ratio intact */
             display: block;
-            margin: 0 auto; /* Center the image horizontally */
+            /* margin: 0 auto; /* Removed this to prevent centering images by default */ 
         }
     </style>
 </head>
@@ -41,5 +41,8 @@
 
     <!-- Changed to h2 for better structure -->
     <h2>Here are some delicious cookies to make you or anyone a happy cookie</h2>
-</body> 
-  <img src="healthy-almond-flour-chocolate-chip-cookies.webp" style="width: 500px; height: auto;">
+
+  <!-- Apply the style directly to this image to prevent centering -->
+  <img src="healthy-almond-flour-chocolate-chip-cookies.webp" style="width: 500px; height: auto; display: inline-block; text-align: left;">
+</body>
+</html>
