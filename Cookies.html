@@ -30,10 +30,26 @@
             margin: 0 auto; /* Center the image horizontally by default */
         }
 
-        /* Override for the second image */
+        /* Flex container for side-by-side content */
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between the image and text */
+            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+        }
+
+        /* Style for the ingredient list */
+        ul {
+            text-align: left;
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px; /* Indentation for list items */
+        }
+
         .no-center {
-            margin: 0; /* Remove centering */
-            text-align: left; /* Align to the left */
+            margin: 0;
+            text-align: left;
         }
     </style>
 </head>
@@ -48,14 +64,18 @@
     <!-- Another h2 for better structure -->
     <h2>Here are some delicious cookies to make you or anyone a happy cookie</h2>
 
-  
-    
-    
-    
-    <!-- Second image without centering, displayed as a square -->
-    <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Healthy Cookies" class="no-center" style="width: 400px; height: 400px;"><p>first things first! youll need to grab your ingredents
-    <ul>flour/all purpose flour</ul></p> 
+    <!-- Flexbox container to hold image and ingredients side by side -->
+    <div class="content-container">
+        <!-- Image for healthy cookies -->
+        <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Healthy Cookies" style="width: 400px; height: 400px;">
 
+        <!-- Text and ingredients list next to the image -->
+        <div>
+            <p>First things first! You'll need to grab your ingredients:</p>
+            <ul>
+                <li>Flour/All-purpose flour</li>
+            </ul>
+        </div>
+    </div>
 </body>
-    
 </html>
