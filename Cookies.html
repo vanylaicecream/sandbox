@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VaNyla's Guide</title>
+    <title>Smily's Cookie Recipes</title>
     
-    <!-- Preconnect and fonts from Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Noto+Serif+Todhri&family=Pacifico&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         body {
             background-color: #FFFEFC;
             font-family: 'Noto Serif Todhri', serif;
-            text-align: center; /* Centering text */
+            text-align: center;
             padding: 20px;
         }
         h1 {
@@ -24,52 +24,90 @@
         h2 {
             font-family: 'Barriecito', sans-serif;
         }
-
-        /* Container for image and ingredients */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align to the left */
-            max-width: 400px; /* Limit width */
-            margin-left: 0; /* Push against the wall */
+        .highlight {
+            font-weight: bold;
+            font-size: 18px;
         }
 
-        img {
-            width: 100%; /* Responsive image */
-            height: auto;
-            display: block;
+        /* Container styling */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Image styling */
+        .logo img {
+            width: 200px; /* Adjust based on your logo size */
+            margin-bottom: 15px;
+        }
+        
+        /* Section dividers */
+        .divider {
+            border-top: 1px solid #000;
+            margin: 20px 0;
         }
 
         /* Ingredients list */
         .ingredients {
             text-align: left;
-            padding-left: 10px;
-            margin-top: 10px;
+            margin-top: 15px;
+            display: inline-block;
+            text-align: left;
         }
-
         ul {
             list-style-type: disc;
-            padding-left: 20px; /* Indentation */
+            padding-left: 20px;
+        }
+
+        /* Footer links */
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: blue;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <img src="Smileys.png">
-    
-    <h2>Welcome to Smileys Cookie Recipes</h2>
-    <hr>
 
-    <h2>Here are some delicious cookies to make you or anyone a happy cookie</h2>
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="Smileys.png" alt="Smiley's Bakin Logo">
+    </div>
 
-    <!-- Image and ingredients wrapped together -->
-    <div class="image-container">
+    <!-- Main Header -->
+    <h2>Smily's Starter Sweets!</h2>
+    <p class="highlight">Welcome to Smily's Cookie Recipes Guide!</p>
+
+    <div class="divider"></div>
+
+    <!-- Sub-header -->
+    <p><strong>Need a smile?</strong> Well, Smily's Bakin is here to help!!!</p>
+    <p>Check out our delicious cookie recipes below.</p>
+
+    <!-- Recipe Section -->
+    <div class="container">
         <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Healthy Cookies">
         <div class="ingredients">
-            <p>First things first! You'll need to grab your ingredients:</p>
+            <p><strong>First things first! You'll need to grab your ingredients:</strong></p>
             <ul>
-                <li>Flour/All-purpose flour</li>
+                <li>Flour / All-purpose flour</li>
+                <li>Sugar</li>
+                <li>Butter</li>
+                <li>Chocolate Chips</li>
             </ul>
         </div>
     </div>
+
+    <div class="divider"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Check out more cookie recipes <a href="#">Cookies</a>.</p>
+    </div>
+
 </body>
 </html>
