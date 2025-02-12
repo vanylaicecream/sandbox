@@ -15,7 +15,8 @@
         body {
             background-color: #FFFEFC;
             font-family: 'Noto Serif Todhri', serif;
-            text-align: center; /* Centering text and Smileys.png */
+            text-align: center; /* Centering text */
+            padding: 20px;
         }
         h1 {
             font-family: 'Pacifico', cursive;
@@ -23,53 +24,50 @@
         h2 {
             font-family: 'Barriecito', sans-serif;
         }
-        img {
-            max-width: 100%; /* Ensure the image is responsive */
-            height: auto; /* Keep the aspect ratio intact */
-            display: block;
-            margin: 0 auto; /* Center the image horizontally by default */
-        }
 
-        /* Flex container for side-by-side content */
-        .content-container {
+        /* Container for image and ingredients */
+        .image-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Space between the image and text */
-            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+            flex-direction: column;
+            align-items: flex-start; /* Align to the left */
+            max-width: 400px; /* Limit width */
+            margin-left: 0; /* Push against the wall */
         }
 
-        /* Style for the ingredient list */
+        img {
+            width: 100%; /* Responsive image */
+            height: auto;
+            display: block;
+        }
+
+        /* Ingredients list */
+        .ingredients {
+            text-align: left;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+
         ul {
-            text-align: left;
             list-style-type: disc;
-            margin: 0;
-            padding-left: 20px; /* Indentation for list items */
-        }
-
-        .no-center {
-            margin: 0;
-            text-align: left;
+            padding-left: 20px; /* Indentation */
         }
     </style>
 </head>
 <body>
-    <!-- Smileys image, centered by default -->
     <img src="Smileys.png" alt="Smileys">
     
-    <!-- Changed to h2 for better structure -->
     <h2>Welcome to Smileys Cookie Recipes</h2>
     <hr>
 
-    <!-- Another h2 for better structure -->
     <h2>Here are some delicious cookies to make you or anyone a happy cookie</h2>
 
-    <!-- Flexbox container to hold image and ingredients side by side -->
-    <div class="content-container">
-        <!-- Image for healthy cookies -->
-        <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Healthy Cookies" style="width: 400px; height: 400px;"><!-- Text and ingredients list next to the image -->
-        <div><p>First things first! You'll need to grab your ingredients:</p>
-            <ul> <li>Flour/All-purpose flour</li>
+    <!-- Image and ingredients wrapped together -->
+    <div class="image-container">
+        <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Healthy Cookies">
+        <div class="ingredients">
+            <p>First things first! You'll need to grab your ingredients:</p>
+            <ul>
+                <li>Flour/All-purpose flour</li>
             </ul>
         </div>
     </div>
