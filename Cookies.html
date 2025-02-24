@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Preconnect and fonts from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Noto+Serif+Todhri&family=Pacifico&display=swap" rel="stylesheet">
 
     <style>
+        /* Custom font from uploaded file */
+        @font-face {
+            font-family: 'King Cake';
+            src: url('KingCake-0WRWz.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
         /* Custom styles */
         body {
             background-color: #FFFEFC;
             font-family: 'Noto Serif Todhri', serif; /* Default font */
             text-align: center; /* Centering text and images */
         }
-        h1 {
-            font-family: 'Pacifico', cursive; /* Specific font for h1 */
-        }
-        h2, .special-text {
-            font-family: 'Barriecito', sans-serif; /* Apply Barriecito to specific texts */
+        h1, h2.special-text {
+            font-family: 'King Cake', cursive; /* Apply custom font */
         }
         p {
             font-family: 'Noto Serif Todhri', serif; /* Default font for paragraph */
@@ -35,16 +36,16 @@
 <body>
     
     <img src="Smileys.png" alt="Smileys Image">
-    <h1>Smileys Bakin cookie recipies!</h1>
+    <h1 class="special-text">Smileys Bakin Cookie Recipes!</h1>
 
-    <h2 class="special-text">Welcome to Smileys Bakin cookie recipes!</h2>
+    <h2 class="special-text">Welcome to Smileys Bakin Cookie Recipes!</h2>
     <hr>
 
     <h2 class="special-text">Here are some cookie recipes to make anyone a happy cookie!</h2>
 
-    <p class="special-text">Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
+    <p>Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
         you’re craving the classic taste of Chocolate Chip Cookies, the soft and buttery goodness of Sugar Cookies, or the rich indulgence of Chocolate Chunk Cookies, 
-        you’re in for a treat. These recipes are easy to follow and perfect for any occasion—whether you're baking for a family gathering, a cozy night in,
+        you’re in for a treat These recipes are easy to follow and perfect for any occasion—whether you're baking for a family gathering, a cozy night in,
         or just to satisfy your sweet tooth. So grab your
         ingredients, preheat your oven, and let's bake some delicious memories!
         First we'll start with the classic chocolate chip cookie, Next making our way to the sugary sweetness of the sugar cookie! then last but NOT 
