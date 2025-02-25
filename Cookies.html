@@ -31,11 +31,12 @@
             display: block;
             margin: 0 auto; /* Center the image horizontally */
         }
-        /* Left-align the paragraph */
-        .left-text {
+
+        /* Left-align specific text */
+        .left-align {
             text-align: left;
-            margin-left: 20px; /* Add space from the left */
-            max-width: 600px; /* Keep a readable width */
+            margin-left: 20px; /* Adds space from the left */
+            max-width: 600px; /* Restrict width for readability */
         }
     </style>
 </head>
@@ -47,10 +48,13 @@
     <h2 class="special-text">Welcome to Smileys Bakin Cookie Recipes!</h2>
     <hr>
 
-    <h2 class="special-text">Here are some cookie recipes to make anyone a happy cookie!</h2>
+    <!-- Move this h2 to the left -->
+    <div class="left-align">
+        <h2 class="special-text">Here are some cookie recipes to make anyone a happy cookie!</h2>
+    </div>
 
-    <div class="left-text">
-        <p><br><br><br><br><br><br><br>Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
+    <div class="left-align">
+        <p>Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
             you’re craving the classic taste of Chocolate Chip Cookies, the soft and buttery goodness of Sugar Cookies,
             or the rich indulgence of Chocolate Chunk Cookies, 
             you’re in for a treat. These recipes are easy to follow and perfect for any occasion—whether you're baking for a family gathering, a cozy night in,
