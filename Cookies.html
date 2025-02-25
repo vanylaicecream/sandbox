@@ -7,7 +7,7 @@
     <style>
         /* Custom font from uploaded file */
         @font-face {
-            font-family: 'Momentz.otf';
+            font-family: 'Momentz';
             src: url('Momentz.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
@@ -20,7 +20,7 @@
             text-align: center; /* Centering text and images */
         }
         h1, h2.special-text {
-            font-family: 'Momentz.otf', cursive; /* Apply custom font */
+            font-family: 'Momentz', cursive; /* Apply custom font */
         }
         p {
             font-family: 'Noto Serif Todhri', serif; /* Default font for paragraph */
@@ -30,6 +30,12 @@
             height: auto; /* Keep the aspect ratio intact */
             display: block;
             margin: 0 auto; /* Center the image horizontally */
+        }
+        /* Left-align the paragraph */
+        .left-text {
+            text-align: left;
+            margin-left: 20px; /* Add space from the left */
+            max-width: 600px; /* Keep a readable width */
         }
     </style>
 </head>
@@ -43,20 +49,24 @@
 
     <h2 class="special-text">Here are some cookie recipes to make anyone a happy cookie!</h2>
 
-    <p>Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
-        you’re craving the classic taste of Chocolate Chip Cookies, the soft and buttery goodness of Sugar Cookies,
-        or the rich indulgence of Chocolate Chunk Cookies, 
-        you’re in for a treat These recipes are easy to follow and perfect for any occasion—whether you're baking for a family gathering, a cozy night in,
-        or just to satisfy your sweet tooth.<br> So grab your
-        ingredients, preheat your oven, and let's bake some delicious memories!<br>
-        <br>First we'll start with the classic chocolate chip cookie, Next making our way to the sugary
-        sweetness of the sugar cookie! then last but NOT 
-        least the chocolate chunk cookie making your mouth drip for
-        more! Baking cookies isn’t just about making something sweet—it’s about creating 
-        moments of joy, filling your kitchen with irresistible aromas, and sharing love with 
-        every bite. Whether you enjoyed the classic chocolate chips, the simple sweetness of sugar
-        cookies, or the rich, gooey chocolate chunk cookie, each recipe brings its own special magic.
-        So keep experimenting, keep baking, and most importantly, keep sharing these delightful 
-        treats with the people who make life sweeter! Happy baking! 🍪✨</p>
+    <div class="left-text">
+        <p>Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
+            you’re craving the classic taste of Chocolate Chip Cookies, the soft and buttery goodness of Sugar Cookies,
+            or the rich indulgence of Chocolate Chunk Cookies, 
+            you’re in for a treat. These recipes are easy to follow and perfect for any occasion—whether you're baking for a family gathering, a cozy night in,
+            or just to satisfy your sweet tooth.<br> So grab your
+            ingredients, preheat your oven, and let's bake some delicious memories!<br>
+            <br>First, we'll start with the classic chocolate chip cookie, next making our way to the sugary
+            sweetness of the sugar cookie! Then, last but NOT 
+            least, the chocolate chunk cookie making your mouth drip for
+            more! Baking cookies isn’t just about making something sweet—it’s about creating 
+            moments of joy, filling your kitchen with irresistible aromas, and sharing love with 
+            every bite. Whether you enjoyed the classic chocolate chips, the simple sweetness of sugar
+            cookies, or the rich, gooey chocolate chunk cookie, each recipe brings its own special magic.
+            So keep experimenting, keep baking, and most importantly, keep sharing these delightful 
+            treats with the people who make life sweeter! Happy baking! 🍪✨
+        </p>
+    </div>
+
 </body>
 </html>
