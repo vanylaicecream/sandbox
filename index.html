@@ -23,7 +23,7 @@
         body {
             background-color: #FFFEFC;
             font-family: 'Momentz', serif; /* Apply custom font */
-            text-align: center; /* Centering text and images */
+            text-align: center; /* Centering text */
         }
         h1 {
             font-family: 'Momentz', cursive;
@@ -31,11 +31,17 @@
         h2 {
             font-family: 'Momentz', sans-serif;
         }
-        img {
-            max-width: 100%; /* Ensure the image is responsive */
-            height: auto; /* Keep the aspect ratio intact */
-            display: block;
-            margin: 0 auto; /* Center the image horizontally */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Creates space between images */
+            flex-wrap: wrap; /* Ensures responsiveness */
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 30%; /* Ensures images are displayed next to each other */
+            height: auto;
+            border-radius: 10px; /* Optional: Adds rounded corners */
         }
     </style>
 </head>
@@ -47,9 +53,11 @@
     <h2>Welcome to Smileys Bakin Guide!</h2>
     <hr>
 
-    <!-- Added new images -->
-    <img src="images-1.jpg" alt="Cupcakes">
-    <img src="healthy-almond-flour-chocolate-chip-cookies.webp" alt="Chocolate Chip Cookies">
+    <!-- Image Section with Flexbox for Alignment -->
+    <div class="image-container">
+        <img src="images-1.jpg" alt="Cupcakes">
+        <img src="download-6.jpg" alt="Chocolate Chip Cookies Plate">
+    </div>
 
     <h2>Need a smile? Well, Smileys Bakin is here to help!!!</h2>
 
