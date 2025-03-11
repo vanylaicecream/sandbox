@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+        }
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form>
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Do you want to receive our monthly newsletter?</label>
+            <input type="radio" name="newsletter" value="yes"> Yes
+            <input type="radio" name="newsletter" value="no"> No
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Login</h2>
+        <form>
+            <label>Username:</label>
+            <input type="text" name="login-username" required>
+
+            <label>Password:</label>
+            <input type="password" name="login-password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p>Signup <a href="#">Here</a></p>
+    </div>
+</body>
+</html>
