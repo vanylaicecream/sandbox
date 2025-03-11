@@ -3,69 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup and Login</title>
+    <title>VaNyla's Guide</title>
+    
+    <!-- Preconnect and fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Noto+Serif+Todhri&family=Pacifico&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        /* Custom font from uploaded file */
+        @font-face {
+            font-family: 'Momentz';
+            src: url('Momentz.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
         }
-        .container {
-            max-width: 400px;
+
+        /* Custom styles */
+        body {
+            background-color: #FFFEFC;
+            font-family: 'Momentz', serif; /* Apply custom font */
+            text-align: center; /* Centering text */
+        }
+        h1 {
+            font-family: 'Momentz', cursive;
         }
         h2 {
-            border-bottom: 2px solid black;
-            padding-bottom: 5px;
+            font-family: 'Momentz', sans-serif;
         }
-        label {
-            display: block;
-            margin-top: 10px;
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Creates space between images */
+            flex-wrap: wrap; /* Ensures responsiveness */
+            margin-top: 20px;
         }
-        input {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        button {
-            margin-top: 10px;
-            padding: 5px 10px;
+        .image-container img {
+            max-width: 30%; /* Ensures images are displayed next to each other */
+            height: auto;
+            border-radius: 10px; /* Optional: Adds rounded corners */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Signup</h2>
-        <form>
-            <label>Username:</label>
-            <input type="text" name="username" required>
 
-            <label>Password:</label>
-            <input type="password" name="password" required>
+    <img src="Smileys (10).png" alt="Smiley Image">
 
-            <label>Email:</label>
-            <input type="email" name="email" required>
-
-            <label>Date of Birth:</label>
-            <input type="date" name="dob" required>
-
-            <label>Do you want to receive our monthly newsletter?</label>
-            <input type="radio" name="newsletter" value="yes"> Yes
-            <input type="radio" name="newsletter" value="no"> No
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <h2>Login</h2>
-        <form>
-            <label>Username:</label>
-            <input type="text" name="login-username" required>
-
-            <label>Password:</label>
-            <input type="password" name="login-password" required>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <p>Signup <a href="#">Here</a></p>
+    <!-- Image Section with Flexbox for Alignment -->
+    <div class="image-container">
+        <img src="images-1.jpg" alt="Cupcakes">
+        <img src="download-6.jpg" alt="Chocolate Chip Cookies Plate">
     </div>
+
+    <h1>Smileys starter sweets!</h1>
+    <h2>Welcome to Smileys Bakin Guide!</h2>
+    <hr>
+
+    <h2>Need a smile? Well, Smileys Bakin is here to help!!!</h2>
+
+    <p>Check out cookie recipes <a href="Cookies.html">Cookies.</a></p>
+
 </body>
 </html>
