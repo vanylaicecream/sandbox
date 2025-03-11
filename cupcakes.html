@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VaNyla's Guide</title>
-    
-    <!-- Preconnect and fonts from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Noto+Serif+Todhri&family=Pacifico&display=swap" rel="stylesheet">
 
     <style>
         /* Custom font from uploaded file */
@@ -18,36 +12,49 @@
             font-weight: normal;
             font-style: normal;
         }
-
+        
         /* Custom styles */
         body {
             background-color: #FFFEFC;
-            font-family: 'Momentz', serif; /* Apply custom font */
-            text-align: center; /* Centering text */
+            font-family: 'Noto Serif Todhri', serif; /* Default font */
+            text-align: center; /* Centering text and images */
         }
-        h1 {
-            font-family: 'Momentz', cursive;
+        h1, h2.special-text {
+            font-family: 'Momentz', cursive; /* Apply custom font */
         }
-        h2 {
-            font-family: 'Momentz', sans-serif;
+        p {
+            font-family: 'Noto Serif Todhri', serif; /* Default font for paragraph */
         }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Creates space between images */
-            flex-wrap: wrap; /* Ensures responsiveness */
-            margin-top: 20px;
+        img {
+            max-width: 100%; /* Ensure the image is responsive */
+            height: auto; /* Keep the aspect ratio intact */
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
         }
-        .image-container img {
-            max-width: 30%; /* Ensures images are displayed next to each other */
-            height: auto;
-            border-radius: 10px; /* Optional: Adds rounded corners */
+
+        /* Left-align specific text */
+        .left-align {
+            text-align: left;
+            margin-left: 20px; /* Adds space from the left */
+            max-width: 600px; /* Restrict width for readability */
         }
     </style>
 </head>
 <body>
+    
 
-    <img src="cupcakes.png" alt="cupcakes image">
+   <img src="cupcakes.png" alt="cupcakes image">
+    <h1 class="special-text">Smileys Bakin Cookie Recipes!</h1>
+
+    <h2 class="special-text">Welcome to Smileys Bakin Cookie Recipes!</h2>
+    <hr>
+
+    <!-- Move this h2 to the left -->
+    <div class="left-align">
+        <h2 class="special-text">Here are some cookie recipes to make anyone a happy cookie!</h2>
+    </div>
+
+  
 
     
 
