@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+    <style> 
         /* Custom font from uploaded file */
         @font-face {
             font-family: 'Momentz';
@@ -16,51 +16,62 @@
         /* Custom styles */
         body {
             background-color: #FFFEFC;
-            font-family: 'Noto Serif Todhri', serif; /* Default font */
-            text-align: center; /* Centering text and images */
+            font-family: 'Noto Serif Todhri', serif;
+            text-align: center;
         }
         h1, h2.special-text {
-            font-family: 'Momentz', cursive; /* Apply custom font */
+            font-family: 'Momentz', cursive;
         }
         p {
-            font-family: 'Noto Serif Todhri', serif; /* Default font for paragraph */
+            font-family: 'Noto Serif Todhri', serif;
         }
-        img {
-            max-width: 100%; /* Ensure the image is responsive */
-            height: auto; /* Keep the aspect ratio intact */
-            display: block;
-            margin: 0 auto; /* Center the image horizontally */
+        
+        /* Container to align text and image */
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
         }
 
-        /* Left-align specific text */
-        .left-align {
-            text-align: left;
-            margin-left: 20px; /* Adds space from the left */
-            max-width: 600px; /* Restrict width for readability */
+        .text-content {
+            max-width: 500px;
+        }
+
+        .image-container img {
+            max-width: 250px;
+            height: auto;
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-    
 
-   <img src="cupcakes.png" alt="cupcakes image">
     <h1 class="special-text">Smileys Bakin Cookie Recipes!</h1>
-
     <h2 class="special-text">Welcome to Smileys Bakin Cupcake Recipes!</h2>
     <hr>
 
-    <!-- Move this h2 to the left -->
-    <div class="left-align">
-        <h2 class="special-text">Here are some cupcake recipes to make your day sparkle!✨</h>
+    <div class="content-container">
+        <div class="text-content">
+            <h2 class="special-text">Here are some cupcake recipes to make your day sparkle!✨</h2>
+            <p>
+                Cupcakes are more than just tiny cakes—they're little bundles of joy, packed with flavor and creativity! 
+                Whether you love classic vanilla, rich chocolate, or adventurous flavors like matcha and salted caramel, 
+                there’s a cupcake for every craving.
+                From elegant weddings to cozy birthdays, cupcakes make every occasion sweeter. 
+                Plus, they’re perfect for sharing—or keeping all to yourself! 
+                With endless decoration possibilities, from swirls of buttercream to sprinkles and edible glitter, each cupcake is a mini masterpiece.
+                Explore our collection of recipes, baking tips, and decoration ideas to bring your cupcake 
+                dreams to life. Because life is too short for boring desserts!! Happy baking! 🍪✨
+            </p>
+        </div>
 
-
-    <div class="left-align">
-        <p>Cupcakes are more than just tiny cakes—they're little bundles of joy, packed with flavor and creativity! Whether you love classic vanilla, rich chocolate, or adventurous flavors like matcha and salted caramel, there’s a cupcake for every craving.
-From elegant weddings to cozy birthdays, cupcakes make every occasion sweeter. Plus, they’re perfect for sharing—or keeping all to yourself! With endless decoration possibilities, from swirls of buttercream to sprinkles and edible glitter, each cupcake is a mini masterpiece.
-Explore our collection of recipes, baking tips, and decoration ideas to bring your cupcake 
-            dreams to life. Because life is too short for boring desserts!! Happy baking! 🍪✨
-        </p>
+        <div class="image-container">
+            <img src="pinkcupcake.png" alt="Cupcakes image">
+        </div>
     </div>
-        
 
-</body> <div class="right-align"></html><img src="pinkcupcake.png" alt="cupcakes image">
+</body>
+</html>
