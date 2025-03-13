@@ -31,7 +31,7 @@
         /* Container to align text and image */
         .content-container {
             display: flex;
-            align-items: center;
+            align-items: stretch; /* Ensures both text and image stretch equally */
             justify-content: center;
             max-width: 900px;
             margin: 20px auto;
@@ -42,10 +42,16 @@
             max-width: 500px;
         }
 
+        .image-container {
+            display: flex;
+            align-items: stretch; /* Forces the image to match text height */
+        }
+
         .image-container img {
-            width: 350px;
-            height: 400px;
-            object-fit: cover;
+            height: 100%; /* Make image as tall as the text */
+            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Prevents overflow */
+            object-fit: cover; /* Ensures the image fills the area properly */
         }
 
         /* Styling for title image */
@@ -66,7 +72,7 @@
 
     <div class="content-container">
         <div class="text-content">
-            <h2 class="special-text">classic chocolate chip cookies🍪</h2>
+            <h2 class="special-text">Classic Chocolate Chip Cookies 🍪</h2>
             <p>
                 Welcome to the world of homemade cookies, where every bite is filled with warmth and happiness! Whether 
                 you’re craving the classic taste of Chocolate Chip Cookies, the soft and buttery goodness of Sugar Cookies,
@@ -90,13 +96,10 @@
             <img src="UwU.jpg" alt="Chocolate chip cookies">
         </div>
         <div class="text-content">
-           
- 
+            <h2 class="special-text">Classic Chocolate Chip Cookies!</h2>
             
-            
-            <h2 class="special-text">classic chocolate chip cookies!</h2>
-            
-                <strong><h2 class="special-text">Ingredents</h2></strong>                <ul>
+            <strong><h2 class="special-text">Ingredients</h2></strong>                
+            <ul>
                 <li>1 cup (2 sticks) unsalted butter, softened</li>
                 <li>1 cup brown sugar, packed</li>
                 <li>1/2 cup granulated sugar</li>
@@ -107,8 +110,9 @@
                 <li>1/2 tsp salt</li>
                 <li>2 cups semisweet chocolate chips</li>
             </ul>
-             <strong><h2 class="special-text">Instructions</h2></strong>
-                <ol>
+
+            <strong><h2 class="special-text">Instructions</h2></strong>
+            <ol>
                 <li>Preheat oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
                 <li>Cream butter and sugars together in a large bowl until light and fluffy.</li>
                 <li>Add eggs one at a time, beating well after each. Stir in vanilla extract.</li>
