@@ -31,7 +31,7 @@
         /* Container to align text and image */
         .content-container {
             display: flex;
-            align-items: stretch; /* Ensures both text and image stretch equally */
+            align-items: stretch;
             justify-content: center;
             max-width: 900px;
             margin: 20px auto;
@@ -44,14 +44,13 @@
 
         .image-container {
             display: flex;
-            align-items: stretch; /* Forces the image to match text height */
+            align-items: stretch;
         }
 
         .image-container img {
-            height: 100%; /* Make image as tall as the text */
-            width: auto; /* Maintain aspect ratio */
-            max-width: 100%; /* Prevents overflow */
-            object-fit: cover; /* Ensures the image fills the area properly */
+            width: auto;
+            height: auto;
+            object-fit: cover;
         }
 
         /* Styling for title image */
@@ -93,7 +92,7 @@
     
     <div class="content-container">
         <div class="image-container">
-            <img src="UwU.jpg" alt="Chocolate chip cookies">
+            <img src="UwU.jpg" alt="Chocolate chip cookies" class="uwu-image">
         </div>
         <div class="text-content">
             <h2 class="special-text">Classic Chocolate Chip Cookies!</h2>
@@ -126,6 +125,18 @@
             </ol>
         </div>
     </div>
+
+    <script>
+        // JavaScript to adjust the width of the "UwU.jpg" image
+        document.addEventListener('DOMContentLoaded', function() {
+            const uwuImage = document.querySelector('.uwu-image');
+            if (uwuImage) {
+                const currentWidth = uwuImage.clientWidth;
+                const additionalWidth = 192; // 2 inches in pixels (assuming 96 DPI)
+                uwuImage.style.width = (currentWidth + additionalWidth) + 'px';
+            }
+        });
+    </script>
 
 </body>
 </html>
